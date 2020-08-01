@@ -1,0 +1,24 @@
+[
+    {   
+        "process": "y",
+        "sheet_name": "CreateBill",
+        "textbox_fields": "Submitted Amount,Number,Name,Tax ID",
+        "combobox_fields": "Bill Format,Bill Source,Bill Media,Unit Description,Name,Reserve,Vendor Category,Vendor Type",
+        "datebox_fields": "Received Date,Invoice Date,From Date,Through Date",
+        "checkbox_fields": "Insured",
+        "radio_fields": "Insured",
+        "label_fields": "Claim Number,Name,Insured Address,Occurrence Date,Status,Line of Business,Claim Type,Address,Phone Number,Email",
+        "button_fields": "Initiate"
+    },
+    {   
+        "process": "y",
+        "sheet_name": "",
+        "textbox_fields": "",
+        "combobox_fields": "",
+        "datebox_fields": "",
+        "checkbox_fields": "",
+        "radio_fields": "",
+        "label_fields": "",
+        "button_fields": ""
+    }        
+]
