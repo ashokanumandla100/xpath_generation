@@ -53,6 +53,11 @@ if __name__ == "__main__":
         'post': '/parent::div/following-sibling::div/input'
     }
 
+    textarea = {
+        'pre': '//span',
+        'post': '/parent::div/following-sibling::div/textarea'
+    }    
+
     combobox = {
         'pre': '//span',
         'post': '/parent::div/following-sibling::div/span/input'
@@ -87,21 +92,28 @@ if __name__ == "__main__":
         config = json.load(f)   
 
     for item in config:
-        process = item["process"]
-        sheet_name = item["sheet_name"]
+        process = item.get("process", "")
+        sheet_name = item.get("sheet_name", "")
+
+        process = "n" if process == "" else process
+
+        sheet_name = str(random.randint(100, 1000)) if sheet_name == "" else sheet_name
         
-        textbox_fields = item['textbox_fields']
-        combobox_fields = item['combobox_fields'] 
-        datebox_fields = item['datebox_fields'] 
-        checkbox_fields = item['checkbox_fields'] 
-        radio_fields = item['radio_fields']
-        label_fields = item['label_fields']
-        button_fields = item['button_fields']
+        textbox_fields = item.get('textbox_fields', '')
+        textarea_fields = item.get('textarea_fields', '')
+        combobox_fields = item.get('combobox_fields', '')
+        datebox_fields = item.get('datebox_fields', '')
+        checkbox_fields = item.get('checkbox_fields', '')
+        radio_fields = item.get('radio_fields', '')
+        label_fields = item.get('label_fields', '')
+        button_fields = item.get('button_fields', '')
         
         arr = []
         if (process.lower()[0]) == "y":
             if textbox_fields.strip() != "":
                 arr += generate_xpaths(textbox_fields, textbox['pre'], textbox['post'])
+            if textarea_fields.strip() != "":
+                arr += generate_xpaths(textarea_fields, textarea['pre'], textarea['post'])                
             if combobox_fields.strip() != "":
                 arr += generate_xpaths(combobox_fields, combobox['pre'], combobox['post'])
             if datebox_fields.strip() != "":

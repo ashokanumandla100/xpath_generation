@@ -1,17 +1,52 @@
 [
-    {   
-        "process": "y",
-        "sheet_name": "CreateBill",
-        "textbox_fields": "Submitted Amount,Number,Name,Tax ID",
-        "combobox_fields": "Bill Format,Bill Source,Bill Media,Unit Description,Name,Reserve,Vendor Category,Vendor Type",
-        "datebox_fields": "Received Date,Invoice Date,From Date,Through Date",
-        "checkbox_fields": "Insured",
-        "radio_fields": "Insured",
-        "label_fields": "Claim Number,Name,Insured Address,Occurrence Date,Status,Line of Business,Claim Type,Address,Phone Number,Email",
-        "button_fields": "Initiate"
+    {
+        "process": "YES",
+        "sheet_name": "DemographicsTest",
+        "textbox_fields": "",
+        "textarea_fields": "User Comments in Area",
+        "combobox_fields": "Gender,Marital Status",
+        "datebox_fields": "Date of Birth,Date of Death",
+        "checkbox_fields": "",
+        "radio_fields": "",
+        "label_fields": "",
+        "button_fields": ""
     },
-    {   
-        "process": "y",
+    {
+        "process": "n",
+        "sheet_name": "InjuredWorkerTreatment",
+        "textbox_fields": "Name",
+        "textarea_fields": "",
+        "combobox_fields": "Vendor Category,Vendor Type,Primary",
+        "datebox_fields": "Effective Date",
+        "checkbox_fields": "",
+        "radio_fields": "",
+        "label_fields": "",
+        "button_fields": ""
+    },   
+    {
+        "process": "n",
+        "sheet_name": "BillSummary",
+        "textbox_fields": "",
+        "combobox_fields": "",
+        "datebox_fields": "",
+        "checkbox_fields": "",
+        "radio_fields": "",
+        "label_fields": "Losses Paid,Expenses Paid,Total Paid",
+        "button_fields": ""
+    },   
+    {
+        "process": "",
+        "sheet_name": "BillReview",
+        "textbox_fields": "Recommended Amount,Review Comments,Bill Status",
+        "combobox_fields": "Bill Review Action,Refer To,Bill Review Status,Bill Review Assignment",
+        "datebox_fields": "Review Date",
+        "checkbox_fields": "",
+        "radio_fields": "",
+        "label_fields": "",
+        "button_fields": ""
+    },   
+    {
+        "process": "n",
         "sheet_name": "",
         "textbox_fields": "",
         "combobox_fields": "",
@@ -20,5 +55,27 @@
         "radio_fields": "",
         "label_fields": "",
         "button_fields": ""
-    }        
+    },
+    {
+        "process": "n",
+        "sheet_name": "",
+        "textbox_fields": "",
+        "combobox_fields": "",
+        "datebox_fields": "",
+        "checkbox_fields": "",
+        "radio_fields": "",
+        "label_fields": "",
+        "button_fields": ""
+    },
+    {
+        "process": "n",
+        "sheet_name": "CreateBill",
+        "textbox_fields": "Submitted Amount,Number,Name,Tax ID",
+        "combobox_fields": "Bill Format,Bill Source,Bill Media,Unit Description,Name,Reserve,Vendor Category,Vendor Type",
+        "datebox_fields": "Received Date,Invoice Date,From Date,Through Date",
+        "checkbox_fields": "Insured",
+        "radio_fields": "Insured",
+        "label_fields": "Claim Number,Name,Insured Address,Occurrence Date,Status,Line of Business,Claim Type,Address,Phone Number,Email",
+        "button_fields": "Initiate"
+    }
 ]
